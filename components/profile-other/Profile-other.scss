@@ -1,0 +1,11 @@
+.button {
+  background-color: $primary;
+  border-radius: $radius-md;
+  color: $container-bg;
+  font-size: to-rem(48);
+  padding: to-rem(16, 32);
+
+  @include media('>sm', '<=md') {
+    border: 2px solid red;
+  }
+}

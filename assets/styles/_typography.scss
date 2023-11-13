@@ -1,0 +1,43 @@
+/* stylelint-disable selector-max-type -- global reset on some tags */
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  line-height: $base-line-height;
+}
+
+p {
+  font-family: $base-font-family;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $base-font-family;
+  margin: 0;
+}
+
+// Heading Styles
+%h1,
+.h1 {
+  font-size: 20px;
+  font-weight: $font-weight-bold;
+  line-height: 1.5;
+}
+
+%h2,
+.h2 {
+  font-size: to-rem(20);
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.08px;
+  line-height: to-rem(24);
+}
+
+%h3,
+.h3 {
+  font-size: 20px;
+  font-weight: $font-weight-bold;
+  line-height: 1.5;
+}

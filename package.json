@@ -1,0 +1,59 @@
+{
+  "name": "profile-page",
+  "version": "1.0.0",
+  "description": "Simple profile page allowing edit functionality for basic information, as well as upload of profile photo and list of interests",
+  "private": true,
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jason-vasilev/profile-page.git"
+  },
+  "author": "Yasen Vasilev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jason-vasilev/profile-page/issues"
+  },
+  "homepage": "https://github.com/jason-vasilev/profile-page#readme",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "npm run lint:script && npm run lint:style",
+    "lint:fix": "npm run lint:fix:script && npm run lint:fix:style",
+    "lint:fix:script": "eslint . --ext .ts,.js,.vue --ignore-path .gitignore --fix",
+    "lint:fix:style": "stylelint \"**/*.scss\" --ignore-path .gitignore --fix",
+    "lint:script": "eslint . --ext .ts,.js,.vue --ignore-path .gitignore",
+    "lint:style": "stylelint \"**/*.scss\" --ignore-path .gitignore",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
+    "nuxt": "^3.8.1",
+    "prettier": "^3.0.3",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "stylelint": "^15.11.0",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard-scss": "^11.1.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-prettier": "^4.0.2",
+    "stylelint-scss": "^5.3.1",
+    "stylelint-z-index-value-constraint": "^1.3.0",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "include-media": "^2.0.0",
+    "normalize.css": "^8.0.1"
+  }
+}

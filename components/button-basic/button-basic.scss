@@ -1,0 +1,38 @@
+.button-basic {
+  background-color: $primary;
+  border: 0;
+  border-radius: $radius-md;
+  color: $container-bg;
+  cursor: pointer;
+  font-family: $base-font-family;
+  font-size: to-rem(14);
+  font-weight: $font-weight-semibold;
+  line-height: to-rem(16);
+  padding: to-rem(12, 20);
+  text-align: left;
+  transition: background-color $base-transition;
+
+  &:hover {
+    background-color: $primary-dark;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary;
+    outline-offset: to-rem(4);
+  }
+
+  &--plane {
+    background-color: transparent;
+    border: $border-basic;
+    color: $icons-text;
+
+    &:hover {
+      border-color: $primary;
+      color: $white;
+    }
+  }
+}

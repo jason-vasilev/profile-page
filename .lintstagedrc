@@ -1,0 +1,7 @@
+{
+  "**/*.{js,ts,vue}": [
+    "prettier --write",
+    "eslint --max-warnings=0 --fix"
+  ],
+  "**/*.scss": ["stylelint --max-warnings=0 --fix"]
+}

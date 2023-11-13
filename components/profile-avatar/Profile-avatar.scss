@@ -1,0 +1,80 @@
+.profile-avatar {
+  align-items: center;
+  border-bottom: $border-basic;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: to-rem(48, 32);
+
+  @include media('<=md') {
+    padding: to-rem(24, 8);
+  }
+
+  @include media('>md') {
+    padding: to-rem(48, 32);
+  }
+
+  &__figure {
+    background-color: $input-bg;
+    border: $border-basic;
+    border-radius: $radius-round;
+    margin: 0 to-rem(16) 0 0;
+    overflow: hidden;
+    position: relative;
+
+    @include media('<=md') {
+      height: to-rem(60);
+      width: to-rem(60);
+    }
+
+    @include media('>md') {
+      height: to-rem(120);
+      width: to-rem(120);
+    }
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__img--default {
+    height: to-rem(32);
+    margin: auto;
+    position: absolute;
+    width: to-rem(32);
+
+    @include media('<=md') {
+      height: to-rem(16);
+      width: to-rem(16);
+    }
+  }
+
+  &__text {
+    max-width: 70%;
+  }
+
+  &__headline {
+    margin-bottom: to-rem(8);
+  }
+
+  &__description {
+    color: $icons-text;
+    font-size: to-rem(14);
+    letter-spacing: 0.01px;
+    line-height: to-rem(16);
+  }
+
+  &__controls {
+    display: flex;
+    gap: to-rem(8);
+
+    @include media('<=md') {
+      margin-top: to-rem(24);
+    }
+
+    @include media('>md') {
+      margin-left: auto;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+/* stylelint-disable scss/dollar-variable-pattern */
+@use 'sass:math';
+
+@function strip-unit($value) {
+  @return math.div($value, $value * 0 + 1);
+}
+
+@function to-rem($values...) {
+  $rem-values: ();
+
+  @each $value in $values {
+    $remValue: math.div(strip-unit($value), strip-unit($base-font-size));
+    $rem-values: $rem-values $remValue + rem;
+  }
+
+  @return $rem-values;
+}

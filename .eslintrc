@@ -1,0 +1,42 @@
+{
+  "root": true,
+
+  "env": {
+    "browser": true,
+    "node": true
+  },
+
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser"
+  },
+
+  "plugins": ["prettier"],
+
+  "extends": [
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:nuxt/recommended",
+    "eslint-config-prettier", // Turns off all ESlint rules that are unnecessary or might conflict with Prettier
+    "prettier" // Adding "prettier" last makes sure that it overrides other configs
+  ],
+
+  // General rules which apply to all the file types
+  "rules": {
+    // Adds empty line before each return statement
+    "padding-line-between-statements": [
+      "warn",
+      // empty line before reach return statement
+      { "blankLine": "always", "prev": "*", "next": "return" },
+
+      // empty line before each variable declaration(except another variable)
+      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
+      {
+        "blankLine": "any",
+        "prev": ["const", "let", "var"],
+        "next": ["const", "let", "var"]
+      },
+
+      //require blank lines between clauses in switch statements.
+      { "blankLine": "always", "prev": ["case", "default"], "next": "*" }
+    ]
+  }
+}

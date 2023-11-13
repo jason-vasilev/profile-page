@@ -1,0 +1,30 @@
+// Spacing
+$spacing-unit: 8px;
+$spacing-xs: calc($spacing-unit / 2); // 4px
+$spacing-sm: $spacing-unit; // 8px
+$spacing-md: calc($spacing-unit * 2); // 16px
+$spacing-lg: calc($spacing-unit * 3); // 24px
+$spacing-xl: calc($spacing-unit * 4); // 32px
+$spacing-xxl: calc($spacing-unit * 6); // 48px
+
+// Border radius
+$radius-md: 5px;
+$radius-round: 50%;
+
+// Border style
+$border-basic: 1px solid $divider;
+
+/* Typography */
+// Base
+$base-font-family: 'azo-sans-web', arial, helvetica, sans-serif;
+$base-font-size: 16px;
+$base-line-height: 1.5;
+
+// Font Weight
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Transitions
+$base-transition: 0.25s ease-in-out;
